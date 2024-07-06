@@ -76,7 +76,7 @@ Source: [MediaPipe Hands Solutions](https://google.github.io/mediapipe/solutions
 </div>
 
 
-## 📝 CODE EXPLANATION
+## CODE EXPLANATION
 <b>Importing Libraries</b>
 ```py
 import cv2
