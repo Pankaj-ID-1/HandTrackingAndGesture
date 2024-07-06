@@ -3,7 +3,10 @@
   <h1>Gesture Volume Control Using OpenCV and MediaPipe</h1>
  </div>
 
-> This Project uses OpenCV and MediaPipe to Control system volume 
+> This Project uses OpenCV and MediaPipe to Control system volume
+> Using the HandTrackingModule Feature are limitless
+> pyautogui library can be used to in scrolling
+> (https://github.com/Crozzers/screen_brightness_control) can be used to control the brightness through hand gesture
 
 ## 💾 REQUIREMENTS
 + opencv-python
@@ -93,10 +96,9 @@ minVol , maxVol , volBar, volPer= volRange[0] , volRange[1], 400, 0
 ***
 Setting up webCam using OpenCV
 ```py
-wCam, hCam = 640, 480
+wCam, hCam = 1280, 720
 cam = cv2.VideoCapture(0)
-cam.set(3,wCam)
-cam.set(4,hCam)
+#Use 0 for deafult web cam and increase value based on connected web cam to its index
 ```
 ***
 Using MediaPipe Hand Landmark Model for identifying Hands 
@@ -184,6 +186,3 @@ Closing webCam
 cam.release()
 ```
 ***
-
-<div align = "center">
-</div>
