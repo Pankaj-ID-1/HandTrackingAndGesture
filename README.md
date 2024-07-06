@@ -4,11 +4,27 @@
  </div>
 
 > This Project uses OpenCV and MediaPipe to Control system volume
-> Using the HandTrackingModule Feature are limitless
-> pyautogui library can be used to in scrolling
-> (https://github.com/Crozzers/screen_brightness_control) can be used to control the brightness through hand gesture
 
-## 💾 REQUIREMENTS
+Using the HandTrackingModule Feature are limitless
+<br/>
+Pyautogui library can be used to in scrolling
+<br/>
+(https://github.com/Crozzers/screen_brightness_control) can be used to control the brightness through hand gesture
+> 
+## Features
+
+- **Hand Gesture Recognition**: Leverages the MediaPipe library for accurate hand tracking and gesture recognition.
+- **Volume Control**: Adjust the volume of your primary audio output device by simply moving your hand up or down.
+- **Real-Time Feedback**: Provides immediate response to hand movements, ensuring a seamless user experience.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.6 or above installed on your computer.
+- A webcam or any compatible camera module for hand tracking.
+
+## REQUIREMENTS
 + opencv-python
 + mediapipe
 + comtypes
@@ -56,7 +72,6 @@ Source: [MediaPipe Hands Solutions](https://google.github.io/mediapipe/solutions
 
 <div align="center">
     <img alt="mediapipeLogo" src="images/hand_landmarks_docs.png" height="200 x    " />
-    <img alt="mediapipeLogo" src="images/htm.jpg" height="360 x" weight ="640 x" />
     
 </div>
 
@@ -181,6 +196,11 @@ cv2.imshow('handDetector', image)
       break
 ```
 ***
+## Acknowledgments
+
+- This project is built using the [MediaPipe](https://google.github.io/mediapipe/) framework for hand tracking and pose estimation.
+- Special thanks to the [pycaw](https://github.com/AndreMiras/pycaw) library for controlling the system volume.
+
 Closing webCam
 ```py
 cam.release()
